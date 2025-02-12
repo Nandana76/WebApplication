@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ExpenseApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Expense</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body ng-controller="ExpenseController">
+    <div class="container">
+        <h2>Add Expense</h2>
+        <form ng-submit="addExpense()">
+            <input type="text" ng-model="expense.title" placeholder="Title" required>
+            <input type="number" ng-model="expense.amount" placeholder="Amount" required>
+            <button type="submit">Add</button>
+        </form>
+    </div>
+</body>
+</html>

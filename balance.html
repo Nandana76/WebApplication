@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ExpenseApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body ng-controller="BalanceController">
+    <div class="container">
+        <h2>Balance</h2>
+        <p>Total Income: {{ totalIncome }}</p>
+        <p>Total Expenses: {{ totalExpenses }}</p>
+        <p>Net Balance: {{ netBalance }}</p>
+    </div>
+</body>
+</html>
